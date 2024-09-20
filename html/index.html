@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfluxDB Data Viewer</title>
+    <!-- 引入 Bootstrap 样式 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<div class="container">
+    <h1 class="mb-4">InfluxDB Data Viewer</h1>
+    <div id="data-container">
+        <h2>Daily Last Records</h2>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Entry</th>
+                <th>Exit</th>
+            </tr>
+            </thead>
+            <tbody id="daily-last-records">
+            <!-- 查询结果将插入到这里 -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
